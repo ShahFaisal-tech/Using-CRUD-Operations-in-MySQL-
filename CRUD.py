@@ -32,7 +32,7 @@ def add_student(name, age, course):
     val = (name, age, course)
     cursor.execute(sql, val)
     conn.commit()
-    print("✅ Student Added Successfully")
+    print("Student Added Successfully")
 
 
 
@@ -42,7 +42,7 @@ def view_students():
     cursor.execute("SELECT * FROM students")
     result = cursor.fetchall()
 
-    print("\n📋 Student Records:")
+    print("\n Student Records:")
     for row in result:
         print(row)
 
@@ -54,7 +54,7 @@ def update_student(student_id, name, age, course):
     val = (name, age, course, student_id)
     cursor.execute(sql, val)
     conn.commit()
-    print("✅ Student Updated Successfully")
+    print("Student Updated Successfully")
 
 
 
